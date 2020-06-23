@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import * as $ from "jquery";
+import * as $ from "jquery";
 import { authEndpoint, clientId, redirectUri, scopes } from "./config";
 import hash from "./components/Hash";
 import Player from "./components/Player";
@@ -56,7 +56,7 @@ class App extends Component {
 
   getCurrentlyPlaying(token) {
     // Make a call using the token
-    token.ajax({
+    $.ajax({
       url: "https://api.spotify.com/v1/me/player",
       type: "GET",
       beforeSend: (xhr) => {
@@ -76,7 +76,7 @@ class App extends Component {
           is_playing: data.is_playing,
           progress_ms: data.progress_ms,
           no_data: false /* We need to "reset" the boolean, in case the
-                            user does not give F5 and has opened his Spotify. */
+                            user does not give F5 and has opened their Spotify. */
         });
       }
     });
