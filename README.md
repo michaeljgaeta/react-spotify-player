@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # React Spotify Player
 
-Simulated adding Spotify integration connected to an app, website or IOT. Can also add personalized music to any application with the Spotify Developer API.
+Simulated adding Spotify integration with an app or website. Can also add personalized music to any application with the Spotify Developer API.
 
 Spotify Web player that displays information about your currently playing music from Spotify. Skills also practiced:
 
